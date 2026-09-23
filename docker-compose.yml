@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  ac-bot:
+    build: .
+    container_name: tku-ac-bot
+    restart: unless-stopped
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+    # If you need to rebuild or pass other configs, you can add them here
