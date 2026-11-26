@@ -37,9 +37,9 @@ class ACController:
             'DeviceId': DEVICE_TYPE,
             'SystemId': SYSTEM_ID,
             'TagValue[DValues][0][Tag]': 'en',
-            'TagValue[DValues][0][Value]': '1',
+            'TagValue[DValues][0][Value]': str(power), # 1 for on, 0 for off
             'TagValue[DValues][1][Tag]': 'emss',
-            'TagValue[DValues][1][Value]': str(power), # 1 for on, 0 for off
+            'TagValue[DValues][1][Value]': '1', 
             'TagValue[AValues][0][Tag]': 'tss',
             'TagValue[AValues][0][Value]': str(temp),
         }
